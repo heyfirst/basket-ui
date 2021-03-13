@@ -1,6 +1,6 @@
 {
-  "name": "@heyfirst/herbui",
-  "version": "0.1.2",
+  "name": "herbui",
+  "version": "0.1.0",
   "description": "Herb UI - Simple and clean Tailwind UI Components",
   "main": "index.js",
   "author": "Kanisorn Sutham <kanisorns.k@gmail.com>",
