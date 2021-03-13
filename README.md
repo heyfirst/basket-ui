@@ -1,2 +1,2 @@
-# 🌿 Herb UI 
+# 🌿 Basket UI
 that's secret :)
