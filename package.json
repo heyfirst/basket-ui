@@ -1,0 +1,32 @@
+{
+  "name": "@heyfirst/herbui",
+  "version": "0.1.1",
+  "description": "Herb UI - Simple and clean Tailwind UI Components",
+  "main": "index.js",
+  "author": "Kanisorn Sutham <kanisorns.k@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/heyfirst/herbui#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyfirst/herbui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/heyfirst/herbui/issues"
+  },
+  "keywords": [
+    "ui-library",
+    "components",
+    "framework",
+    "tailwindcss",
+    "css"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "branches": [
+      "master"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
