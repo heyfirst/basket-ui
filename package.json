@@ -20,7 +20,12 @@
     "tailwindcss",
     "css"
   ],
+  "dependencies": {
+    "tailwindcss": "^2.0.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-components": "postcss src/styled/index.css -o dist/styled.css && prejss-cli dist/styled.css --format commonjs",
+    "build-utilities": "prejss-cli src/utilities/*.css --out-dir dist/utilities --format commonjs",
+    "build": "npm run style"
   }
 }
