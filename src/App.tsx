@@ -1,15 +1,15 @@
 import React from 'react';
+import Sidebar from './components/Sidebar';
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Basket UI
-        </p>
-      </header>
+    <div>
+      <Sidebar />
+      <div className="main-wrapper">
+        <div>Hi</div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
