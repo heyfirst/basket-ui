@@ -1,7 +1,7 @@
 import React from "react";
 import Showcase from "./Showcase";
 
-const DocumentPage: React.FC = () => {
+const DocumentPage: React.FC<React.PropsWithChildren<{}>> = () => {
   return (
     <div className="container p-8 mx-auto">
       <div className="max-w-4xl mb-4">

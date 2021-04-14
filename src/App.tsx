@@ -1,15 +1,29 @@
-import React from "react";
-import DocumentPage from "./components/DocumentPage";
+import React, { Suspense } from "react";
+import { Route, BrowserRouter, Switch } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
+import { DOCUMENTS } from "./docs";
 
 const App: React.FC = () => {
   return (
-    <div>
+    <BrowserRouter>
       <Sidebar />
       <main className="pl-72 main-wrapper">
-        <DocumentPage />
+        <Suspense fallback={<div />}>
+          <Switch>
+            {DOCUMENTS.map((document) =>
+              document.menus.map((menu) => (
+                <Route
+                  exact
+                  path={menu.link}
+                  key={menu.link}
+                  component={menu.component}
+                />
+              ))
+            )}
+          </Switch>
+        </Suspense>
       </main>
-    </div>
+    </BrowserRouter>
   );
 };
 
