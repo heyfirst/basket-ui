@@ -6,15 +6,19 @@ export const DOCUMENTS = [
     homePage: "/",
     menus: [
       {
-        title: "About Library",
+        title: "Introduction",
         link: "/",
-        component: () => <div>About Library</div>,
+        component: () => (
+          <DocumentPage title="Introduction">Introduction</DocumentPage>
+        ),
         publish: true,
       },
       {
         title: "Release Note",
         link: "/release-note",
-        component: () => <div>About Library</div>,
+        component: () => (
+          <DocumentPage title="Release Note">Release Note</DocumentPage>
+        ),
         publish: true,
       },
     ],
@@ -26,67 +30,91 @@ export const DOCUMENTS = [
       {
         title: "Home Screen",
         link: "/pages/home-screen",
-        component: () => <div>Home Screen</div>,
+        component: () => (
+          <DocumentPage title="Home Screen">Home Screen</DocumentPage>
+        ),
         publish: true,
       },
       {
         title: "Detail Screen",
         link: "/pages/detail-screen",
-        component: () => <div>Detail Screen</div>,
+        component: () => (
+          <DocumentPage title="Detail Screen">Detail Screen</DocumentPage>
+        ),
         publish: true,
       },
       {
         title: "Login Screen",
         link: "/pages/login-screen",
-        component: () => <div>Login Screen</div>,
+        component: () => (
+          <DocumentPage title="Login Screen">Login Screen</DocumentPage>
+        ),
         publish: true,
       },
       {
         title: "Register Form",
         link: "/pages/register-form",
-        component: () => <div>Register Form</div>,
+        component: () => (
+          <DocumentPage title="Register Form">Register Form</DocumentPage>
+        ),
         publish: true,
       },
       {
         title: "Detail List",
         link: "/pages/detail-list",
-        component: () => <div>Detail List</div>,
+        component: () => (
+          <DocumentPage title="Detail List">Detail List</DocumentPage>
+        ),
         publish: true,
       },
       {
         title: "Dashboard Screen",
         link: "/pages/dashboard-screen",
-        component: () => <div>Dashboard Screen</div>,
+        component: () => (
+          <DocumentPage title="Dashboard Screen">Dashboard Screen</DocumentPage>
+        ),
         publish: true,
       },
       {
         title: "Error Screen",
         link: "/pages/error-screen",
-        component: () => <div>Error Screen</div>,
+        component: () => (
+          <DocumentPage title="Error Screen">Error Screen</DocumentPage>
+        ),
         publish: true,
       },
       {
         title: "Interactive Map",
         link: "/pages/interactive-map",
-        component: () => <div>Interactive Map</div>,
+        component: () => (
+          <DocumentPage title="Interactive Map">Interactive Map</DocumentPage>
+        ),
         publish: true,
       },
       {
         title: "Setting Screen",
         link: "/pages/setting-screen",
-        component: () => <div>Setting Screen</div>,
+        component: () => (
+          <DocumentPage title="Setting Screen">Setting Screen</DocumentPage>
+        ),
         publish: true,
       },
       {
         title: "Kanban Board",
         link: "/pages/kanban-board",
-        component: () => <div>Kanban Board</div>,
+        component: () => (
+          <DocumentPage title="Kanban Board">Kanban Board</DocumentPage>
+        ),
         publish: true,
       },
       {
         title: "Product Grid Screen",
         link: "/pages/product-grid-screen",
-        component: () => <div>Product Grid Screen</div>,
+        component: () => (
+          <DocumentPage title="Product Grid Screen">
+            Product Grid Screen
+          </DocumentPage>
+        ),
         publish: true,
       },
     ],
@@ -98,175 +126,183 @@ export const DOCUMENTS = [
       {
         title: "Typography",
         link: "/components/typography",
-        component: () => <div>Typography</div>,
+        component: () => (
+          <DocumentPage title="Typography">Typography</DocumentPage>
+        ),
         publish: true,
       },
       {
         title: "Card",
         link: "/components/card",
-        component: () => <div>Card</div>,
+        component: () => <DocumentPage title="Card">Card</DocumentPage>,
         publish: true,
       },
       {
         title: "Button",
         link: "/components/button",
-        component: () => <DocumentPage>Button</DocumentPage>,
+        component: () => <DocumentPage title="Button">Button</DocumentPage>,
         publish: true,
       },
       {
         title: "Button Group",
         link: "/components/button-group",
-        component: () => <div>Button</div>,
+        component: () => <DocumentPage title="Button">Button</DocumentPage>,
         publish: true,
       },
       {
         title: "Table",
         link: "/components/table",
-        component: () => <div>Table</div>,
+        component: () => <DocumentPage title="Table">Table</DocumentPage>,
         publish: true,
       },
       {
         title: "Breadcrumb",
         link: "/components/breadcrumb",
-        component: () => <div>Breadcrumb</div>,
+        component: () => (
+          <DocumentPage title="Breadcrumb">Breadcrumb</DocumentPage>
+        ),
         publish: true,
       },
       {
         title: "Form",
         link: "/components/form",
-        component: () => <div>Form</div>,
+        component: () => <DocumentPage title="Form">Form</DocumentPage>,
         publish: true,
       },
       {
         title: "Spinner",
         link: "/components/spinner",
-        component: () => <div>Spinner</div>,
+        component: () => <DocumentPage title="Spinner">Spinner</DocumentPage>,
         publish: true,
       },
       {
         title: "Tooltip",
         link: "/components/tooltip",
-        component: () => <div>Tooltip</div>,
+        component: () => <DocumentPage title="Tooltip">Tooltip</DocumentPage>,
         publish: true,
       },
       {
         title: "Avatar",
         link: "/components/avatar",
-        component: () => <div>Avatar</div>,
+        component: () => <DocumentPage title="Avatar">Avatar</DocumentPage>,
         publish: true,
       },
       {
         title: "Tabs",
         link: "/components/tabs",
-        component: () => <div>Tabs</div>,
+        component: () => <DocumentPage title="Tabs">Tabs</DocumentPage>,
         publish: true,
       },
       {
         title: "Icon",
         link: "/components/icon",
-        component: () => <div>Icon</div>,
+        component: () => <DocumentPage title="Icon">Icon</DocumentPage>,
         publish: true,
       },
       {
         title: "Timeline",
         link: "/components/timeline",
-        component: () => <div>Timeline</div>,
+        component: () => <DocumentPage title="Timeline">Timeline</DocumentPage>,
         publish: true,
       },
       {
         title: "Navbar",
         link: "/components/navbar",
-        component: () => <div>Navbar</div>,
+        component: () => <DocumentPage title="Navbar">Navbar</DocumentPage>,
         publish: true,
       },
       {
         title: "Sidebar",
         link: "/components/sidebar",
-        component: () => <div>Sidebar</div>,
+        component: () => <DocumentPage title="Sidebar">Sidebar</DocumentPage>,
         publish: true,
       },
       {
         title: "Pagination",
         link: "/components/pagination",
-        component: () => <div>Pagination</div>,
+        component: () => (
+          <DocumentPage title="Pagination">Pagination</DocumentPage>
+        ),
         publish: true,
       },
       {
         title: "Select",
         link: "/components/select",
-        component: () => <div>Select</div>,
+        component: () => <DocumentPage title="Select">Select</DocumentPage>,
         publish: true,
       },
       {
         title: "Dropdown",
         link: "/components/dropdown",
-        component: () => <div>Dropdown</div>,
+        component: () => <DocumentPage title="Dropdown">Dropdown</DocumentPage>,
         publish: true,
       },
       {
         title: "Badge",
         link: "/components/badge",
-        component: () => <div>Badge</div>,
+        component: () => <DocumentPage title="Badge">Badge</DocumentPage>,
         publish: true,
       },
       {
         title: "Label",
         link: "/components/label",
-        component: () => <div>Label</div>,
+        component: () => <DocumentPage title="Label">Label</DocumentPage>,
         publish: true,
       },
       {
         title: "Alert",
         link: "/components/alert",
-        component: () => <div>Alert</div>,
+        component: () => <DocumentPage title="Alert">Alert</DocumentPage>,
         publish: true,
       },
       {
         title: "Page State",
         link: "/components/page-state",
-        component: () => <div>Page State</div>,
+        component: () => (
+          <DocumentPage title="Page State">Page State</DocumentPage>
+        ),
         publish: true,
       },
       {
         title: "Filter Bar",
         link: "/components/filter-bar",
-        component: () => <div>Filter</div>,
+        component: () => <DocumentPage title="Filter">Filter</DocumentPage>,
         publish: true,
       },
       {
         title: "Skeleton",
         link: "/components/skeleton",
-        component: () => <div>Skeleton</div>,
+        component: () => <DocumentPage title="Skeleton">Skeleton</DocumentPage>,
         publish: true,
       },
       {
         title: "List",
         link: "/components/list",
-        component: () => <div>List</div>,
+        component: () => <DocumentPage title="List">List</DocumentPage>,
         publish: true,
       },
       {
         title: "Modal",
         link: "/components/modal",
-        component: () => <div>Modal</div>,
+        component: () => <DocumentPage title="Modal">Modal</DocumentPage>,
         publish: true,
       },
       {
         title: "Progress",
         link: "/components/progress",
-        component: () => <div>Progress</div>,
+        component: () => <DocumentPage title="Progress">Progress</DocumentPage>,
         publish: true,
       },
       {
         title: "Toast",
         link: "/components/toast",
-        component: () => <div>Toast</div>,
+        component: () => <DocumentPage title="Toast">Toast</DocumentPage>,
         publish: true,
       },
       {
         title: "Calendar",
         link: "/components/calendar",
-        component: () => <div>Calendar</div>,
+        component: () => <DocumentPage title="Calendar">Calendar</DocumentPage>,
         publish: true,
       },
     ],

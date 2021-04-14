@@ -1,6 +1,6 @@
 import React from "react";
 import { DOCUMENTS } from "../docs";
-import SidebaMenu from "./SidebarMenu";
+import SidebarMenu from "./SidebarMenu";
 
 const Sidebar: React.FC = () => {
   return (
@@ -19,7 +19,7 @@ const Sidebar: React.FC = () => {
           <ul>
             {section.menus.map((menu) => (
               <li key={menu.title}>
-                <SidebaMenu menu={menu} active={menu.title === "Button"} />
+                <SidebarMenu menu={menu} />
               </li>
             ))}
           </ul>
