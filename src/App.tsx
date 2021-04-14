@@ -1,13 +1,14 @@
-import React from 'react';
-import Sidebar from './components/Sidebar';
+import React from "react";
+import DocumentPage from "./components/DocumentPage";
+import Sidebar from "./components/Sidebar";
 
 const App: React.FC = () => {
   return (
     <div>
       <Sidebar />
-      <div className="main-wrapper">
-        <div>Hi</div>
-      </div>
+      <main className="pl-72 main-wrapper">
+        <DocumentPage />
+      </main>
     </div>
   );
 };
