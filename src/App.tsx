@@ -11,14 +11,16 @@ const App: React.FC = () => {
         <Suspense fallback={<div />}>
           <Switch>
             {DOCUMENTS.map((document) =>
-              document.menus.map((menu) => (
-                <Route
-                  exact
-                  path={menu.link}
-                  key={menu.link}
-                  component={menu.component}
-                />
-              ))
+              document.menus
+                .filter((menu) => menu.publish)
+                .map((menu) => (
+                  <Route
+                    exact
+                    path={menu.link}
+                    key={menu.link}
+                    component={menu.component}
+                  />
+                ))
             )}
           </Switch>
         </Suspense>

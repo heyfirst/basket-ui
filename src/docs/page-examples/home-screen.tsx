@@ -1,13 +1,11 @@
 import React from "react";
-import Showcase from "./Showcase";
+import Showcase from "../../components/Showcase";
 
-const DocumentPage: React.FC<React.PropsWithChildren<{ title: string }>> = ({
-  title,
-}) => {
+const HomeScreen: React.FC = () => {
   return (
     <div className="container p-8 mx-auto">
       <div className="max-w-4xl mb-4">
-        <h2 className="text-2xl">{title}</h2>
+        <h2 className="mb-4 text-3xl">Home Screen</h2>
         <p className="text-sm">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
           minima dolorem quo dolor quos ex consequatur? Sit beatae quaerat
@@ -15,6 +13,8 @@ const DocumentPage: React.FC<React.PropsWithChildren<{ title: string }>> = ({
           veniam adipisci labore doloribus?
         </p>
       </div>
+
+      <Showcase />
       <Showcase />
       <Showcase />
       <Showcase />
@@ -23,4 +23,4 @@ const DocumentPage: React.FC<React.PropsWithChildren<{ title: string }>> = ({
   );
 };
 
-export default DocumentPage;
+export default HomeScreen;

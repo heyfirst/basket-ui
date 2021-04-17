@@ -2,6 +2,9 @@
 @tailwind components;
 
 @layer components {
+  .nav-link:hover .overlay {
+    @apply bg-yellow-100;
+  }
   .nav-link.active .overlay {
     @apply bg-yellow-100;
   }
