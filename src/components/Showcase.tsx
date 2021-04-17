@@ -1,11 +1,19 @@
 import React, { useEffect, useRef, useState } from "react";
+import cx from "classnames";
 import Frame from "react-frame-component";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneLight } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import beautifyMarkup from "../utils/beautifyMarkup";
 
-const Showcase: React.FC<{ title: string; component: React.ReactNode }> = ({
+export type Showcase = {
+  title: string;
+  type?: "component" | "page";
+  component: React.ReactNode;
+};
+
+const ShowcaseCard: React.FC<Showcase> = ({
   title,
+  type = "component",
   component,
 }) => {
   const markupRef = useRef<HTMLDivElement>(null);
@@ -28,7 +36,9 @@ const Showcase: React.FC<{ title: string; component: React.ReactNode }> = ({
         </div>
         <div className="flex items-center flex-shrink-0 ml-4">
           <button
-            className="p-1 text-xs cursor-pointer"
+            className={cx("p-1 text-xs cursor-pointer focus:outline-none", {
+              "text-yellow-700": isCodeOpen,
+            })}
             onClick={() => setCodeOpen(!isCodeOpen)}
           >
             <svg
@@ -50,12 +60,19 @@ const Showcase: React.FC<{ title: string; component: React.ReactNode }> = ({
       </div>
       <div className="relative h-full bg-gray-100">
         <Frame
+          className="w-full h-96"
           head={
             <>
               <link
                 href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.1/tailwind.min.css"
                 rel="stylesheet"
               />
+              <style>
+                {type &&
+                  `body {
+                  margin: 1rem;
+                }`}
+              </style>
             </>
           }
         >
@@ -80,4 +97,4 @@ const Showcase: React.FC<{ title: string; component: React.ReactNode }> = ({
   );
 };
 
-export default Showcase;
+export default ShowcaseCard;

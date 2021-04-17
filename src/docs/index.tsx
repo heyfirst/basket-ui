@@ -1,3 +1,5 @@
+import DemoPage from "../components/DemoPage";
+import CardComponent from "./components/card";
 import Introduction from "./getting-started/introduction";
 import HomeScreen from "./page-examples/home-screen";
 
@@ -27,8 +29,8 @@ export const DOCUMENTS = [
       {
         title: "Home Screen",
         link: "/pages/home-screen",
-        component: () => <HomeScreen />,
-        publish: true,
+        component: () => <DemoPage {...HomeScreen} />,
+        publish: false,
       },
       {
         title: "Detail Screen",
@@ -105,8 +107,8 @@ export const DOCUMENTS = [
       {
         title: "Card",
         link: "/components/card",
-        component: () => null,
-        publish: false,
+        component: () => <DemoPage {...CardComponent} />,
+        publish: true,
       },
       {
         title: "Button",

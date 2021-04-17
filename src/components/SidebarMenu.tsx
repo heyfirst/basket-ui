@@ -13,10 +13,10 @@ const SidebarMenu: React.FC<{
         "relative flex justify-between items-center px-3 py-2 mb-2",
         {
           "hover:text-yellow-700 nav-link": menu.publish,
-          "opacity-30 cursor-not-allowed ": !menu.publish,
+          "opacity-30 cursor-not-allowed": !menu.publish,
         }
       )}
-      activeClassName="text-yellow-700 active"
+      activeClassName="text-yellow-800 active"
       onClick={(e) => !menu.publish && e.preventDefault()}
     >
       <span className="absolute inset-0 rounded-md overlay "></span>
