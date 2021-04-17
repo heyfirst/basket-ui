@@ -1,5 +1,6 @@
 import React from "react";
-import Showcase from "../../components/Showcase";
+import Showcase from "../../../components/Showcase";
+import HomeScreen1 from "./home-screen-1";
 
 const HomeScreen: React.FC = () => {
   return (
@@ -13,12 +14,8 @@ const HomeScreen: React.FC = () => {
           veniam adipisci labore doloribus?
         </p>
       </div>
-
-      <Showcase />
-      <Showcase />
-      <Showcase />
-      <Showcase />
-      <Showcase />
+      <Showcase title={"Home Screen 1"} component={<HomeScreen1 />} />
+      <Showcase title={"Home Screen 2"} component={<HomeScreen1 />} />
     </div>
   );
 };
