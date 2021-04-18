@@ -7,6 +7,7 @@ import HomeScreen from "./page-examples/home-screen";
 
 import NavbarComponent from "./components/navbars";
 import CardComponent from "./components/cards";
+import ToolTipComponent from "./components/tooltips";
 
 export const DOCUMENTS = [
   {
@@ -154,8 +155,8 @@ export const DOCUMENTS = [
       {
         title: "Tooltip",
         link: "/components/tooltip",
-        component: () => null,
-        publish: false,
+        component: () => <DemoPage {...ToolTipComponent} />,
+        publish: true,
       },
       {
         title: "Avatar",
