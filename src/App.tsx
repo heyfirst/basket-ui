@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
+import GitHubButton from "./components/GitHubButton";
 import Sidebar from "./components/Sidebar";
 import { DOCUMENTS } from "./docs";
 
@@ -24,6 +25,7 @@ const App: React.FC = () => {
             )}
           </Switch>
         </Suspense>
+        <GitHubButton />
       </main>
     </BrowserRouter>
   );

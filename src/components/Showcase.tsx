@@ -36,9 +36,12 @@ const ShowcaseCard: React.FC<Showcase> = ({
         </div>
         <div className="flex items-center flex-shrink-0 ml-4">
           <button
-            className={cx("p-1 text-xs cursor-pointer focus:outline-none", {
-              "text-yellow-700": isCodeOpen,
-            })}
+            className={cx(
+              "p-1 text-xs cursor-pointer focus:outline-none hover:text-yellow-700 transition-colors duration-200",
+              {
+                "text-yellow-700": isCodeOpen,
+              }
+            )}
             onClick={() => setCodeOpen(!isCodeOpen)}
           >
             <svg

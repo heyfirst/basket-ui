@@ -10,7 +10,7 @@ const SidebarMenu: React.FC<{
       exact
       to={menu.link}
       className={cx(
-        "relative flex justify-between items-center px-3 py-2 mb-2",
+        "relative flex justify-between items-center px-3 py-2 mb-2 transition-colors duration-200",
         {
           "hover:text-yellow-700 nav-link": menu.publish,
           "opacity-30 cursor-not-allowed": !menu.publish,
@@ -19,7 +19,7 @@ const SidebarMenu: React.FC<{
       activeClassName="text-yellow-800 active"
       onClick={(e) => !menu.publish && e.preventDefault()}
     >
-      <span className="absolute inset-0 rounded-md overlay "></span>
+      <span className="absolute inset-0 rounded-md overlay"></span>
       <span className="relative">{menu.title}</span>
       {!menu.publish && (
         <svg
