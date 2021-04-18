@@ -1,7 +1,12 @@
 import DemoPage from "../components/DemoPage";
-import CardComponent from "./components/card";
+
 import Introduction from "./getting-started/introduction";
+
+import DetailScreen from "./page-examples/detail-screen";
 import HomeScreen from "./page-examples/home-screen";
+
+import NavbarComponent from "./components/navbars";
+import CardComponent from "./components/cards";
 
 export const DOCUMENTS = [
   {
@@ -35,7 +40,7 @@ export const DOCUMENTS = [
       {
         title: "Detail Screen",
         link: "/pages/detail-screen",
-        component: () => null,
+        component: () => <DemoPage {...DetailScreen} />,
         publish: false,
       },
       {
@@ -105,8 +110,8 @@ export const DOCUMENTS = [
         publish: false,
       },
       {
-        title: "Card",
-        link: "/components/card",
+        title: "Cards",
+        link: "/components/cards",
         component: () => <DemoPage {...CardComponent} />,
         publish: true,
       },
@@ -177,10 +182,10 @@ export const DOCUMENTS = [
         publish: false,
       },
       {
-        title: "Navbar",
-        link: "/components/navbar",
-        component: () => null,
-        publish: false,
+        title: "Navbars",
+        link: "/components/navbars",
+        component: () => <DemoPage {...NavbarComponent} />,
+        publish: true,
       },
       {
         title: "Sidebar",

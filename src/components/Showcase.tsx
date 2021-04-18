@@ -68,7 +68,7 @@ const ShowcaseCard: React.FC<Showcase> = ({
                 rel="stylesheet"
               />
               <style>
-                {type &&
+                {type === "component" &&
                   `body {
                   margin: 1rem;
                 }`}
